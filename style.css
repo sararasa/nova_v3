@@ -3,6 +3,7 @@
     src: url('assets/fonts/HalenoirCompactTextRegular/font.woff2') format('woff2'),
        url('assets/fonts/HalenoirCompactTextRegular/font.woff') format('woff');
     font-weight: 400;
+    font-display: swap;
 }
 
 @font-face {
@@ -10,6 +11,7 @@
     src: url('assets/fonts/HalenoirCompactTextDemiBold/font.woff2') format('woff2'),
        url('assets/fonts/HalenoirCompactTextDemiBold/font.woff') format('woff');
     font-weight: 600;
+    font-display: swap;
 }
 
 h1{
@@ -44,6 +46,7 @@ p {
 
 a{
     text-decoration: none;
+    color: white;
 }
 
 * {
@@ -145,19 +148,16 @@ section {
 header {
   background: #000000;
   color: white;
-}
-
-footer {
-    background: white;
-    color: #000000;
-}
-
-header {
   height: auto;
   padding: 1rem 3vw 1rem;
   position: fixed;
   z-index: 1000;
   width: 100vw;
+}
+
+footer {
+    background: white;
+    color: #000000;
 }
 
 header a{
@@ -175,7 +175,7 @@ footer{
     padding: 0 3vw 3rem;
 }
 
-#arrow-v {
+.arrow-v {
  height: 3rem;
 }
 
@@ -247,11 +247,11 @@ footer .container{
   margin-top: 1rem;
 }
 
-#title {
+.title {
     margin-top: 0;
 }
 
-#title-colored {
+.title-colored {
     margin-top: 0;
     color: #00FFE0;
 }
@@ -263,25 +263,8 @@ footer .container{
     margin-bottom: 3rem;
 }
 
-.where, .team, .about, .partners, .contacts{
+.team, .about, .partners, .contacts{
     padding: 4rem 0 0 0;
-}
-
-.where a{
-    text-decoration: none;
-}
-
-#location{
-    margin: 3rem 0 4rem 0;
-
-}
-
-#map{
-    margin-bottom: 4rem;
-}
-
-.reach{
-    padding: 0 4rem 0;
 }
 
 .elenco {
@@ -318,11 +301,7 @@ footer .container{
     width: 12rem;
 }
 
-#logo-03{
-    width: 6rem;
-}
-
-#contacts{
+.contacts-left{
     margin-top: 0;
     text-transform: uppercase;
     font-size: 0.8rem;
@@ -333,10 +312,6 @@ footer .container{
     text-transform: uppercase;
     text-align: right;
     font-size: 0.8rem;
-}
-
-a{
-    color: white;
 }
 
 #contacts-container{
@@ -417,7 +392,7 @@ footer a{
     gap: 1rem;
 }
 
-#contacts{
+.contacts-left{
     font-size: 1rem;
 }
 
@@ -467,7 +442,6 @@ main{
 }
 
 #team,
-#where,
 #partners,
 #contacts{
   scroll-margin-top: 1.3rem;
